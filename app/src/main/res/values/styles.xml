@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextStyleMain">
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textColorHint">@color/colorBackground</item>
+        <item name="android:backgroundTint">@color/colorBackground</item>
+    </style>
+
+    <style name="EditTextStyleRegister">
+        <item name="android:layout_marginStart">@dimen/dimen25</item>
+        <item name="android:layout_marginEnd">@dimen/dimen25</item>
+        <item name="android:layout_marginTop">@dimen/dimen15</item>
+        <item name="android:textColor">@color/colorFontTitle</item>
+        <item name="android:textColorHint">@color/colorFontDesc</item>
+        <item name="android:backgroundTint">@color/colorFontDesc</item>
+    </style>
+
+    <style name="RadioButtonRegister">
+        <item name="buttonTint">@color/colorLightBlue</item>
+        <item name="android:textColor">@color/colorFontTitle</item>
+    </style>
+
+    <style name="MyTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

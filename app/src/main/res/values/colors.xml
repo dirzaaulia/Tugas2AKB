@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorLightBlue">#43B3E6</color>
+    <color name="colorShadowHeader">#D1D2D4</color>
+    <color name="colorSeparator">#939597</color>
+    <color name="colorFontTitle">#404041</color>
+    <color name="colorFontDesc">#808284</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundInviteFriend">#F1F1F2</color>
+    <color name="colorBlack">#000000</color>
+</resources>

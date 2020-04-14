@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@mipmap/ic_header" />
+
+        <EditText
+            android:id="@+id/edit_text_username_register"
+            style="@style/EditTextStyleRegister"
+            android:layout_marginTop="@dimen/dimen25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginStart="@dimen/dimen25"
+            android:layout_marginEnd="@dimen/dimen25"
+            android:paddingStart="@dimen/dimen25"
+            android:paddingEnd="@dimen/dimen25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioButtonRegister"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:checked="true" />
+
+            <RadioButton
+                style="@style/RadioButtonRegister"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_edit_text_bloodtype"
+                style="@style/EditTextStyleRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@mipmap/ic_arrow_dropdown"
+                android:hint="@string/blood_type" />
+
+            <AutoCompleteTextView
+                style="@style/EditTextStyleRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@mipmap/ic_arrow_dropdown"
+                android:hint="@string/reshus"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/retype_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginStart="@dimen/dimen25"
+            android:layout_marginEnd="@dimen/dimen25"
+            android:paddingStart="@dimen/dimen25"
+            android:paddingEnd="@dimen/dimen25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioButtonRegister"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal"
+                android:checked="true"/>
+
+            <RadioButton
+                style="@style/RadioButtonRegister"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/organization" />
+
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_arrow_dropdown"
+            android:hint="@string/job"
+            android:inputType="text" />
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_address"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            style="@style/EditTextStyleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_blood_needed_location"
+            android:hint="@string/default_location"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginStart="@dimen/dimen25"
+            android:layout_marginEnd="@dimen/dimen25"
+            android:buttonTint="@color/colorLightBlue"
+            android:hint="@string/agree"
+            android:textColorHint="@color/colorFontTitle" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen25"
+            android:layout_marginStart="@dimen/dimen25"
+            android:layout_marginEnd="@dimen/dimen25"
+            android:layout_marginBottom="@dimen/dimen25"
+            android:text="@string/text_register"
+            android:textColor="@color/colorLightBlue"
+            android:textSize="@dimen/text15"
+            android:background="@drawable/background_button_register"/>
+
+    </LinearLayout>
+
+</ScrollView>
